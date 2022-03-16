@@ -95,28 +95,67 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 <!-- Slider ==================================================
 ================================================== -->
 <section class="slider">
-  <div class="flexslider">
-    <ul class="slides">
-      <li> <a href="#"><img src="images/flexslider/1.jpg" alt=""/></a>
-        <section class="caption">
-          <h2 class="shadow3">Cari</h2>
-          <p>Free, fully responsive HTML site template made by <a href="http://www.anarieldesign.com/" rel="nofollow"><strong>Anariel Design</strong></a></p>
-          <a class="button" href="#">Download me!</a></section>
-      </li>
-      <li> <img src="images/flexslider/2.jpg" alt="" />
-        <section class="caption">
-          <h2 class="shadow3">I am Freebix!</h2>
-          <p>Free, fully responsive HTML site template made by <a href="http://www.anarieldesign.com/" rel="nofollow"><strong>Anariel Design</strong></a></p>
-          <a class="button" href="#">Download me!</a></section>
-      </li>
-      <li> <a href="#"><img src="images/flexslider/3.jpg" alt="" /></a>
-        <section class="caption">
-          <h2 class="shadow3">I am Freebix!</h2>
-          <p>Free, fully responsive HTML site template made by <a href="http://www.anarieldesign.com/" rel="nofollow"><strong>Anariel Design</strong></a></p>
-          <a class="button" href="#">Download me!</a></section>
-      </li>
-    </ul>
+  <!-- Carousel wrapper -->
+<div
+id="carouselVideoExample"
+class="carousel slide carousel-fade"
+data-mdb-ride="carousel"
+>
+<!-- Indicators -->
+
+
+<!-- Inner -->
+<div class="carousel-inner">
+  <!-- Single item -->
+  <div class="carousel-item active">
+    <video class="img-fluid" autoplay loop muted>
+      <source src="https://mdbcdn.b-cdn.net/img/video/Tropical.mp4" type="video/mp4" />
+    </video>
+    
   </div>
+
+  <!-- Single item -->
+  <div class="carousel-item">
+    <video class="img-fluid" autoplay loop muted>
+      <source src="https://mdbcdn.b-cdn.net/img/video/forest.mp4" type="video/mp4" />
+    </video>
+    
+  </div>
+
+  <!-- Single item -->
+  <div class="carousel-item">
+    <video class="img-fluid" autoplay loop muted>
+      <source
+        src="https://mdbcdn.b-cdn.net/img/video/Agua-natural.mp4"
+        type="video/mp4"
+      />
+    </video>
+    
+  </div>
+</div>
+<!-- Inner -->
+
+<!-- Controls -->
+<button
+  class="carousel-control-prev"
+  type="button"
+  data-mdb-target="#carouselVideoExample"
+  data-mdb-slide="prev"
+>
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button
+  class="carousel-control-next"
+  type="button"
+  data-mdb-target="#carouselVideoExample"
+  data-mdb-slide="next"
+>
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div>
+<!-- Carousel wrapper -->
   <!-- flexslider ends here --> 
 </section>
 <!-- slider ends here --> 

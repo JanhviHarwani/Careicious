@@ -30,6 +30,7 @@
 .navbar-nav{
     margin-left:auto;
 }
+
 .navbar{
     font-size: 1.5em;
 }
@@ -51,7 +52,9 @@
 .navbar-brand{
     font-size: 2rem;;
 }
-
+.carousel-item.active{
+	z-index: 0 !important;
+}
 .column, .columns {
 	float: left;
 	display: inline;
