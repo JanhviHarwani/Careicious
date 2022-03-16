@@ -552,7 +552,7 @@ p.quote {
 }
 /****************************** Footer ******************************/
 .footer {
-	background:#261b0d url(../images/rausch.png) repeat;
+	background:#292B2A url(../images/rausch.png) repeat;
 	padding:20px 0px;
 }
 .footer p {
@@ -624,11 +624,11 @@ ul.socials li {
 }
 /****************************** Copyright ******************************/
 #copyright {
-	background:#1b1309;
-	border-top:1px solid #000;
+	background:#292B2A;
+	/* border-top:1px solid #000; */
 }
 p.copyright {
-	font-size:11px;
+	font-size:16px;
 	color:#f9efe3;
 	text-align:center;
 	text-shadow:none;
