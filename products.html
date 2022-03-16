@@ -25,7 +25,12 @@
 
 <!-- CSS ==================================================
 ================================================== -->
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <!-- Bootstrap js   -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/skeleton.css">
 <link rel="stylesheet" href="css/screen.css">
@@ -47,212 +52,44 @@
 
 <!--Content Part ==================================================
 ================================================== -->
-<div id="header">
-  <div class="container"> 
-    <!-- Header | Logo, Menu
-		================================================== -->
-    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
-    <div class="mainmenu">
-      <div id="mainmenu">
-        <ul class="sf-menu">
-          <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="products.html">Products</a>
+<section class="container1">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">Careicious</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Home</a>
             </li>
-            <li><a href="blog.html">Blog</a>
-              <ul>
-                <li><a href="singleblog.html">Single Post</a></li>
-              </ul>
+
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="about.html">About Us</a>
             </li>
-            <li><a href="cart.html">Cart</a></li>
-            <li><a href="contact.html" id="visited">Contact us</a></li>
-          </ul>
-      </div>
-      <!-- mainmenu ends here --> 
-      
-      <!-- Responsive Menu -->
-      <form id="responsive-menu" action="#" method="post">
-          <select>
-            <option value=""></option>
-            <option value="index.html">Home</option>
-            <option value="about.html">About Us</option>
-            <option value="products.html">Products</option>
-            <option value="blog.html">Blog</option>
-            <option value="cart.html">Cart</option>
-            <option value="contact.html">Contact US</option>
-          </select>
-      </form>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+            </li>
+           
+        </ul>
     </div>
-    <!-- mainmenu ends here --> 
-  </div>
-  <!-- container ends here --> 
-</div>
-<!-- header ends here --> 
-<!--Breadcrumbs ==================================================
-================================================== -->
-<div class="breadcrumbs">
-  <div class="container">
-    <header>
-      <h3>Features Page</h3>
-      <p>- Free, fully <span class="pink">responsive HTML</span> site template made by <a href="http://www.anarieldesign.com/" rel="nofollow"><strong>Anariel Design</strong></a> -</p>
-    </header>
-  </div>
-  <!-- container ends here -->
-  <hr class="separator1">
-</div>
-<!-- breadcrumbs ends here --> 
-<!-- Features ==================================================
-================================================== -->
-<div id="resume">
-  <div class="container resume">
-    <h3>Freebix Resume</h3>
-    <p>Lorem ipsum dolor sit amet, Mauris laoreet nulla at dui consectetur vel elementum justo tempor. Sed erat dui, sagittis a pharetra ut, tempor erat dui, sagittis a pharetra ut, tempor vel turpis. Vestibulum blandit ultricies tempus. Phasellus sollicitudin quam vitae eros aliquam viverra.</p>
-    <div class="one_third">
-      <h4>Education</h4>
-    </div>
-    <div class="two_third lastcolumn">
-      <p><strong>2000-2008</strong> - Mauris laoreet nulla at dui consectetur vel elementum justo tempor. Sed erat dui, sagittis a pharetra ut, tempor erat dui, sagittis a pharetra ut, tempor vel turpis. Vestibulum blandit ultricies tempus.</p>
-      <p><strong>2008-2009</strong> - Mauris laoreet nulla at dui consectetur vel elementum justo tempor. Sed erat dui, sagittis a pharetra ut, tempor erat dui, sagittis a pharetra ut, tempor vel turpis. Vestibulum blandit ultricies tempus.</p>
-    </div>
-    <div class="one_third">
-      <h4>Work Experience</h4>
-    </div>
-    <div class="two_third lastcolumn">
-      <p><strong>2009-2011</strong> - Mauris laoreet nulla at dui consectetur vel elementum justo tempor. Sed erat dui, sagittis a pharetra ut, tempor erat dui, sagittis a pharetra ut, tempor vel turpis. Vestibulum blandit ultricies tempus.</p>
-      <p><strong>2011-2012</strong> - Mauris laoreet nulla at dui consectetur vel elementum justo tempor. Sed erat dui, sagittis a pharetra ut, tempor erat dui, sagittis a pharetra ut, tempor vel turpis. Vestibulum blandit ultricies tempus.</p>
-    </div>
-    <div class="one_third">
-      <h4>Awards</h4>
-    </div>
-    <div class="two_third lastcolumn">
-      <div class="one_fourth">
-        <p><img src="images/portfolio/a.jpg" alt=""/></p>
-        <p>2011 Best Theme Award</p>
-      </div>
-      <div class="one_fourth">
-        <p><img src="images/portfolio/c.jpg" alt=""/></p>
-        <p>2012 Project Award</p>
-      </div>
-      <div class="one_fourth">
-        <p><img src="images/portfolio/b.jpg" alt=""/></p>
-        <p>2012 Project Award</p>
-      </div>
-      <div class="one_fourth lastcolumn">
-        <p><img src="images/portfolio/a.jpg" alt=""/></p>
-        <p>2009 Project of the Year</p>
-      </div>
-    </div>
-    <div class="one_third">
-      <h4>References</h4>
-    </div>
-    <div class="two_third lastcolumn">
-      <div class="one_half">
-        <p><strong>Jan Doe</strong><br />
-          Manager at Proximet in 2008<br />
-          200.000.0000</p>
-      </div>
-      <!--//grid_3-->
-      <div class="one_half lastcolumn">
-        <p><strong>Johnathan Smith</strong><br />
-          Co-worker at Proximet in 2012<br />
-          300.000.0000</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Features FAQ ==================================================
-================================================== -->
-<div class="container">
-  <hr class="separator">
-  <h3>Accordions</h3>
-  <div class="accordion-trigger">
-    <h3>What did you eat for breakfast?</h3>
-  </div>
-  <div class="accordion-container">
-    <div class="one_third"> <img class="shadow" src="images/portfolio/c.jpg" alt="" /> </div>
-    <!--end one_third-->
-    <div class="one_third"> <img class="shadow" src="images/portfolio/a.jpg" alt="" /> </div>
-    <!--end one_third-->
-    <div class="one_third lastcolumn"> <img class="shadow" src="images/portfolio/b.jpg" alt="" /> </div>
-    <!--end one_third-->
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. </p>
-    <hr class="separator1">
-  </div>
-  <div class="accordion-trigger">
-    <h3>Morning or Night person?</h3>
-  </div>
-  <div class="accordion-container">
-    <div class="one_half">
-      <div class="video-holder">
-        <div class="video-container">
-          <iframe title="YouTube video player" class="youtube-player" src="http://www.youtube.com/embed/W7JXcoTty3Q"></iframe>
-        </div>
-        <!--video-container ends here--> 
-      </div>
-      <!--video-holder ends here--> 
-    </div>
-    <!--end one_half-->
-    <div class="one_half lastcolumn">
-      <div class="video-holder">
-        <div class="video-container">
-          <iframe title="YouTube video player" class="youtube-player" src="http://www.youtube.com/embed/W7JXcoTty3Q"></iframe>
-        </div>
-        <!--video-container ends here--> 
-      </div>
-      <!--video-holder ends here--> 
-    </div>
-    <!--end one_half-->
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p>
-    <hr class="separator1">
-  </div>
-  <div class="accordion-trigger">
-    <h3>If you were a animal, which would you be?</h3>
-  </div>
-  <div class="accordion-container">
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p>
-    <hr class="separator1">
-  </div>
-  <div class="accordion-trigger">
-    <h3>Your favorite places in the world?</h3>
-  </div>
-  <div class="accordion-container">
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p>
-    <hr class="separator1">
-  </div>
-  <div class="accordion-trigger">
-    <h3>Your favorite color?</h3>
-  </div>
-  <div class="accordion-container">
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p>
-    <hr class="separator1">
-  </div>
-  <div class="accordion-trigger">
-    <h3>The 5 things you can't live without?</h3>
-  </div>
-  <div class="accordion-container">
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
-    <hr class="separator1">
-    <!-- ENDS Accordions --> 
-  </div>
-  <hr class="separator">
-  <h3>Tabs</h3>
-  <ul class="tabs">
-    <li><a class="active" href="#trends">Trends</a></li>
-    <li><a class="" href="#fashion">Fashion</a></li>
-    <li><a class="" href="#shows">Shows</a></li>
-  </ul>
-  <ul class="tabs-content">
-    <li class="active" id="trends">
-      <p>Lorem ipsum dolor sit amet, proscriptum videt ulteriori. Filiam sunt amore nec est cum autem est se in. Cellam sanctissima coniunx in lucem exempli paupers coniunx rex cum autem quod ait regem Ardalio. Filiam sunt amore nec est cum autem est se in.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
-    </li>
-    <li id="fashion">
-      <p>Lorem ipsum dolor sit amet, proscriptum videt ulteriori. Filiam sunt amore nec est cum autem est se in. Cellam sanctissima coniunx in lucem exempli paupers coniunx rex cum autem quod ait regem Ardalio. Filiam sunt amore nec est cum autem est se in.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-    </li>
-    <li id="shows">
-      <p>Lorem ipsum dolor sit amet, proscriptum videt ulteriori. Filiam sunt amore nec est cum autem est se in. Cellam sanctissima coniunx in lucem exempli paupers coniunx rex cum autem quod ait regem Ardalio. Filiam sunt amore nec est cum autem est se in.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
-    </li>
-  </ul>
-</div>
+</nav>
+</section>
+
 <!-- container ends here -->
 <div class="blankSeparator"></div>
 

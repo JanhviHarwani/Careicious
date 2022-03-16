@@ -760,8 +760,13 @@ p.quote {
 /****************************** Footer ******************************/
 
 .footer {
+<<<<<<< HEAD
     background: #261b0d url(../images/rausch.png) repeat;
     padding: 20px 0px;
+=======
+	background:#292B2A url(../images/rausch.png) repeat;
+	padding:20px 0px;
+>>>>>>> d9016ed7059d2b5e052c3ed527f84aaa92e636f7
 }
 
 .footer p {
@@ -850,16 +855,29 @@ ul.socials li {
 /****************************** Copyright ******************************/
 
 #copyright {
+<<<<<<< HEAD
     background: #1b1309;
     border-top: 1px solid #000;
+=======
+	background:#292B2A;
+	/* border-top:1px solid #000; */
+>>>>>>> d9016ed7059d2b5e052c3ed527f84aaa92e636f7
 }
 
 p.copyright {
+<<<<<<< HEAD
     font-size: 11px;
     color: #f9efe3;
     text-align: center;
     text-shadow: none;
     padding-top: 10px;
+=======
+	font-size:16px;
+	color:#f9efe3;
+	text-align:center;
+	text-shadow:none;
+	padding-top:10px;
+>>>>>>> d9016ed7059d2b5e052c3ed527f84aaa92e636f7
 }
 
 p.copyright a {
