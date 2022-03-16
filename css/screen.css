@@ -144,7 +144,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 }
 li a#visited {
 	border-bottom:3px solid #e8ded1;
-	color:#fff;
+	color:black;
 }
 /*** submenu ***/
 .sf-menu li ul {
