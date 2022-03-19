@@ -177,6 +177,7 @@ h2 {
     }
     .custom-class-flex-details {
         padding-top: 3%;
+        width: 80%;
     }
 }
 
@@ -189,9 +190,11 @@ h2 {
     }
     .details-rev-flex {
         padding-top: 2%;
+        width:100%
     }
     .details {
         padding-top: 2%;
+        width:100%;
     }
 }
 
@@ -658,4 +661,17 @@ width: 400px;
 .blog-content
 {
     font-size: 14px;
+}
+
+
+@media only screen and (max-width:990px) {
+    .custom-latest-container {
+        flex-direction: column;
+        width: auto;
+    }
+    .custom-class-flex-details {
+        padding-top: 3%;
+        width: 60% !important;
+        text-align: justify;
+    }
 }
