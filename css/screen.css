@@ -69,9 +69,10 @@ div.blankSeparator2 {
 	color:#261b0d;
 	background-color: #f07272;
 	font-family: Myriad Pro Family !important;
+
 }
 .tip-twitter .tip-inner {
-	font:12px/16px Arial, Helvetica, sans-serif;
+	font:12px/16px Myriad Pro Family;
 }
 /****************************** HOME - Content Part - Logo&Menu ******************************/
 /* Header - Logo & Menu */
@@ -138,7 +139,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 	top:			0;
 }
 .sf-menu li a {
-	font-family:'Oswald', serif;
+	font-family:Myriad Pro Family;
 	font-size:15px;
 	padding:45px 15px 45px 15px;
 	text-decoration:none;
@@ -164,7 +165,7 @@ li a#visited {
 	margin-top:75px;
 }
 .sf-menu li ul li a {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Myriad Pro Family;
 	padding:15px 0 15px 0;
 	text-decoration:none;
 	color: #e8ded1;
@@ -531,7 +532,7 @@ span.pink {
 .accordion-trigger h3 {
 	text-transform:none;
 	font-size:18px;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:Myriad Pro Family;
 }
 .accordion-trigger.active {
 	background:url(../images/toggle.png) no-repeat right -80px;
@@ -581,7 +582,7 @@ p.quote {
 #tweets li {
 	line-height: 1.5em;
 	color:#efefef;
-	font-family:  Arial, Helvetica, sans-serif;
+	font-family:  Myriad Pro Family;
 }
 #tweets li a {
 	color:#f9efe3;

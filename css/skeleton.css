@@ -548,6 +548,7 @@ width: 400px;
 .row, .clearfix {
 	zoom: 1;
 }
+
 /* You can also use a <br class="clear" /> to clear columns */
     .clear {
 	clear: both;
@@ -565,7 +566,7 @@ width: 400px;
 .gallery_two {
     position: relative;
     display: block;
-    padding: 15px 0 90px;
+    padding: 120px 0 90px;
 }
 .gallery_two_single {
     position: relative;
