@@ -41,6 +41,7 @@ body {
 /*overflow-x: hidden;*/}
 ol, ul {
 	list-style: none;
+	/* font-size: 14px; */
 }
 blockquote, q {
 	quotes: none;

@@ -655,3 +655,7 @@ width: 400px;
     color: var(--thm-primary);
 }
 
+.blog-content
+{
+    font-size: 14px;
+}
