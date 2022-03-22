@@ -412,6 +412,9 @@ padding-left: 192px;
  .container .offset-by-five {
 padding-left: 240px;
 }
+#tableBody>tr{
+    vertical-align:none !important;
+}
  .container .offset-by-six {
 padding-left: 288px;
 }
@@ -685,12 +688,28 @@ width: 400px;
   }
   
   .container3 > div {
-    flex: 33.33%; /* or - flex: 0 50% - or - flex-basis: 50% - */
-    margin: 10px 0px;
+    flex: 33.33%;
+    /* margin: 10px 0px; */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* padding: 100px; */
+    padding:15px 50px;
+    
   }
+  
+  .card-img-top{
+    width: 225px !important;
+    text-align: center !important;
+  }
+  .addtocartbu{
+    padding: 7px;
+    background-color: #A4895D;
+    color: white !important;
+    border: none;
+    outline: none;
+  }
+  .addtocartbu>a{color:white;}
   .card-body{
       display: flex;
       flex-direction: column;

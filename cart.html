@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
+
 <html lang="en">
-<!--<![endif]-->
 <head>
 
 <!-- Basic Page Needs ================================================== 
@@ -100,15 +96,17 @@ crossorigin="anonymous">
   }
 
   th {
-      border-bottom: 1px solid rgb(245, 178, 178);
+                border-bottom: 1px solid #A4895D;
 
+     padding-bottom:10px;
       font-size: 28px;
   }
 
   td {
       width: 9%;
-      border-bottom: 1px solid pink;
+      
       font-size: 23px;
+    vertical-align:middle !important;
 
   }
 
@@ -121,9 +119,16 @@ crossorigin="anonymous">
   }
   tr{
     padding:5px;
+    border:none;
   }
   
+tfoot{
+          border-bottom: 1px solid #A4895D;
 
+}
+#tableFoot>th{
+    border:none !important;
+}
 
 
 
@@ -243,9 +248,11 @@ crossorigin="anonymous">
               <th>Name</th>
               <th>Quantity</th>
               <th>Price</th>
+              
               <td class="emptyTd"></td>
+              <br><br>
           </tr>
-          <br><br>
+          
       </thead>
       <tbody id="tableBody">
 
@@ -254,8 +261,9 @@ crossorigin="anonymous">
   </table>
 </div>
 <div >
+    
   <div id="oder-now-button" class="hideONBOX" onfocus="this.className='oder-now-button';"onmouseover="this.className='order-now-button'" onmouseout="this.className='showONBOX'">
-      <a href="checkOut.html">Order Now</a>
+      <a href="new.php" >Order Now</a>
   </div>
 </div>
 
@@ -332,7 +340,7 @@ crossorigin="anonymous">
       var totalPrice = 0;
       for (var i = 0; i < cartItems.length; i++) {
 
-          document.getElementById("tableBody").innerHTML += "<tr> <td> <img src='images/" + cartItems[i].image + "' id='imageWH'></td><td>" + cartItems[i].name + "</td><td><button class='inDecButton' onmouseover='this.className=`inDecButton1`' onmouseout='this.className=`inDecButton`'  onclick='decQuantity(" + i + ")'><i class='fa fa-minus'></i></button> &nbsp;" + cartItems[i].quantity + "&nbsp; <button class='inDecButton' onmouseover='this.className=`inDecButton1`' onmouseout='this.className=`inDecButton`' onclick='increQuantity(" + i + ")'><i class='fa fa-plus'></i></button></td><td>" + cartItems[i].price * cartItems[i].quantity + "/-</td><td class='emptyTd'> <button class='delbutton' onmouseover='this.className= `delbutton1`' onmouseout='this.className= `delbutton`'  onclick='delItem(" + i + ");'>x</button></td>"
+          document.getElementById("tableBody").innerHTML += "<br><tr> <td> <img src='images/" + cartItems[i].image + "' id='imageWH'></td><td>" + cartItems[i].name + "</td><td><button class='inDecButton' onmouseover='this.className=`inDecButton1`' onmouseout='this.className=`inDecButton`'  onclick='decQuantity(" + i + ")'><i class='fa fa-minus'></i></button> &nbsp;" + cartItems[i].quantity + "&nbsp; <button class='inDecButton' onmouseover='this.className=`inDecButton1`' onmouseout='this.className=`inDecButton`' onclick='increQuantity(" + i + ")'><i class='fa fa-plus'></i></button></td><td>" + cartItems[i].price * cartItems[i].quantity + "/-</td><td class='emptyTd'> <button class='delbutton' onmouseover='this.className= `delbutton1`' onmouseout='this.className= `delbutton`'  onclick='delItem(" + i + ");'>x</button></td> <br>"
           totalItems += cartItems[i].quantity;
           totalPrice += cartItems[i].quantity * cartItems[i].price;
       }
@@ -404,5 +412,39 @@ crossorigin="anonymous">
 <script src="js/jquery.flexslider-min.js" type="text/javascript"></script> 
 <!-- Modernizr --> 
 <script type="text/javascript" src="js/modernizr.custom.29473.js"></script>
+
+<script type="text/javascript">
+    function checkout(){
+    var subject = {};
+    subject.id = 1;
+    subject.name = "Pranav";
+    subject.profession = "Programmer";
+        
+    var cartItems = localStorage.getItem("cartList")
+    cartItems = JSON.parse(cartItems);
+    // var cart_names = [];
+    // var cart_quantity = [];
+    // for (var i = 0; i < cartItems.length; i++) {
+    //    // console.log(cartItems[i].name);
+    //    cart_names.push(cartItems[i].name);
+    //    cart_quantity.push(cartItems[i].quantity);
+    // }
+    console.log(cartItems);
+    // console.log(cart_names);
+    // console.log(cart_quantity);
+    
+
+    // console.log(cartItems[1].name);
+   
+    $.ajax({
+       url:'process1.php',
+       method:"post",
+       data: {cartItems : JSON.stringify( cartItems ) },
+       success: function(res){
+          console.log(res);
+       }
+    })
+    }
+ </script>
 </body>
 </html>
