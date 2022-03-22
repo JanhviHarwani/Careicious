@@ -1,5 +1,5 @@
 let items = [
-    {id:01, name: "Product-title-1", image: "/images/4.jpg", price: 600, quantity: 1 },
+    {id:01, name: "Product-title-1", image: "/images/5.jpg", price: 600, quantity: 1 },
     {id:02, name: "Product-title-2", image: "/images/5.jpg", price: 450, quantity: 1 },
     {id:03, name: "Product-title-3", image: "/images/6.jpg", price: 500, quantity: 1 },
 
