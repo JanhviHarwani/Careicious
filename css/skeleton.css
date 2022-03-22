@@ -800,3 +800,11 @@ width: 400px;
     color: #333;
     font-size: 1.1em;
 }
+
+.site-footer__social {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 19px;
+}
