@@ -127,6 +127,7 @@ h2 {
 
 .card-text {
     overflow-y: scroll;
+    height:125px;
 }
 .navbar-nav{
     margin-left:auto;
@@ -709,7 +710,10 @@ width: 400px;
     border: none;
     outline: none;
   }
-  .addtocartbu>a{color:white;}
+  .addtocartbu>a:hover{ 
+    color: white !important;
+    outline: none!important;
+}
   .card-body{
       display: flex;
       flex-direction: column;

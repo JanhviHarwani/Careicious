@@ -81,7 +81,14 @@
     <hr class="separator1">
   </div>
 
+  
    <script type="text/javascript">
+
+      let name = localStorage.getItem("name");
+      let email = localStorage.getItem("email");
+      let phone = localStorage.getItem("phone");
+
+
 
 
       var cartItems = localStorage.getItem("cartList")
@@ -103,12 +110,16 @@
       $.ajax({
          url:'process1.php',
          method:"post",
-         data: {cartItems : JSON.stringify( cartItems ) },
+         data: {cartItems : JSON.stringify( cartItems ),name: name,email:email,phone:phone},
          success: function(res){
             console.log(res);
          }
       })
         localStorage.removeItem("cartList");
+        localStorage.removeItem("name");
+        localStorage.removeItem("phone");
+        localStorage.removeItem("email");
+        
 
    </script>
 </body>
