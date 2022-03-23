@@ -1,7 +1,13 @@
 let items = [
-    {id:01, name: "Product-title-1", image: "/images/5.jpg", price: 600, quantity: 1 },
-    {id:02, name: "Product-title-2", image: "/images/5.jpg", price: 450, quantity: 1 },
-    {id:03, name: "Product-title-3", image: "/images/6.jpg", price: 500, quantity: 1 },
+    {id:01, name: "FACE WASH", image: "Careicious/1.facewash.jpg", price: 999, quantity: 1 },
+    {id:02, name: "FACE SERUM", image: "Careicious/4.faceserum.jpg", price: 499, quantity: 1 },
+    {id:03, name: "FACE CREAM", image: "Careicious/8.facecream.jpg", price: 499, quantity: 1 },
+    {id:04, name: "BODY LOTION", image: "Careicious/2. bodylotion.jpg", price: 899, quantity: 1 },
+    {id:05, name: "SHAMPOO", image: "Careicious/3.shampoo.jpg", price: 1099, quantity: 1 },
+    {id:06, name: "HAIR SERUM", image: "Careicious/5.hairserum.jpg", price: 899, quantity: 1 },
+    {id:07, name: "SUNSCREEN LOTION", image: "Careicious/6.sunscreen lotion.jpg", price: 899, quantity: 1 },
+    {id:08, name: "CONDITIONER", image: "Careicious/7.conditioner.jpg", price: 999, quantity: 1 },
+    {id:09, name: "SOAP", image: "Careicious/9.soap.jpg", price: 599, quantity: 1 },
 
 ]
 

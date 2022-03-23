@@ -20,15 +20,14 @@
 ================================================== -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-
 <!-- CSS ==================================================
 ================================================== -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
 integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <!-- Bootstrap js   -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-  crossorigin="anonymous"></script>
+<!-- Bootstrap js   -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/skeleton.css">
 <link rel="stylesheet" href="css/screen.css">
@@ -41,12 +40,14 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-crossorigin="anonymous">
+
 <!-- Google Fonts ==================================================
 ================================================== -->
 <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-<style>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="./add-to-cart.js"></script>
+<script src="./main.js"></script><style>
   .order-now-button {
       border: 3px outset rgb(252, 200, 209);
       width: 100px;
@@ -280,15 +281,16 @@ tfoot{
       <p><span class="orange"><strong>Address:</strong></span> <br>
         SF-201 Pehel Lakeview, B/H Saligram Lakeview Khoraj Village,<br> Gandhinagar-382481</p>
       <p><span class="orange"><strong>Phone:</strong></span> <br>
-        +91 9924142747<br>
+        +91 8485962296<br>
       </p>
       <a href="mailto:info@careicious.com" style="font-size: 16px; font-family: Myriad Pro Family;">info@careicious.com</a><br>
-        <div class="site-footer__socia">
-          <a href="https://www.facebook.com/Aranya-Nature-Farm-100426441779662/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-          <a href="https://www.youtube.com/channel/UCJ9yeo_M2Jymv0mC07bqfbw" target="_blank"><i class="fab fa-youtube"></i></a>
-          <a href="https://www.instagram.com/aranyanaturefarm/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://api.whatsapp.com/send?phone=+918488064935" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      </div>
+      <div class="site-footer__socia">
+        <a href="https://www.facebook.com/careicious/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/careicious?t=TEv8DsgMU3DYwGInt_tU5Q&s=09" target="_blank"><i class="fab fa-twitter"></i></a>        
+        <a href="https://youtube.com/channel/UCc0jpq__rSpHnRV44MqHm1Q" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://instagram.com/careicious?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=+918488064935" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
     </div>
     <!-- four columns ends here -->
     <div class="one_fourth">
@@ -344,7 +346,7 @@ tfoot{
       var totalPrice = 0;
       for (var i = 0; i < cartItems.length; i++) {
 
-          document.getElementById("tableBody").innerHTML += "<br><tr> <td> <img src='images/" + cartItems[i].image + "' id='imageWH'></td><td>" + cartItems[i].name + "</td><td><button class='inDecButton' onmouseover='this.className=`inDecButton1`' onmouseout='this.className=`inDecButton`'  onclick='decQuantity(" + i + ")'><i class='fa fa-minus'></i></button> &nbsp;" + cartItems[i].quantity + "&nbsp; <button class='inDecButton' onmouseover='this.className=`inDecButton1`' onmouseout='this.className=`inDecButton`' onclick='increQuantity(" + i + ")'><i class='fa fa-plus'></i></button></td><td>" + cartItems[i].price * cartItems[i].quantity + "/-</td><td class='emptyTd'> <button class='delbutton' onmouseover='this.className= `delbutton1`' onmouseout='this.className= `delbutton`'  onclick='delItem(" + i + ");'>x</button></td> <br>"
+          document.getElementById("tableBody").innerHTML += "<br><tr> <td> <img src='" + cartItems[i].image + "' id='imageWH'></td><td>" + cartItems[i].name + "</td><td><button class='inDecButton' onmouseover='this.className=`inDecButton1`' onmouseout='this.className=`inDecButton`'  onclick='decQuantity(" + i + ")'><i class='fa fa-minus'></i></button> &nbsp;" + cartItems[i].quantity + "&nbsp; <button class='inDecButton' onmouseover='this.className=`inDecButton1`' onmouseout='this.className=`inDecButton`' onclick='increQuantity(" + i + ")'><i class='fa fa-plus'></i></button></td><td>" + cartItems[i].price * cartItems[i].quantity + "/-</td><td class='emptyTd'> <button class='delbutton' onmouseover='this.className= `delbutton1`' onmouseout='this.className= `delbutton`'  onclick='delItem(" + i + ");'>x</button></td> <br>"
           totalItems += cartItems[i].quantity;
           totalPrice += cartItems[i].quantity * cartItems[i].price;
       }
