@@ -284,9 +284,8 @@
             </tbody>
             <tfoot id="tableFoot"></tfoot>
         </table>
-    </div>
-    <div>
-    <form action="new.php" method="post">
+
+    <form action="new.php" class="form-new" style="margin-top:25px;" method="post">
         <h3 style="text-align: center;">Enter your details to checkout</h3>
 
         <div class="details-new">
@@ -384,6 +383,7 @@
             let cartItems = localStorage.getItem("cartList") || [];
             let cart = cartItems.length > 0 ? cartItems = JSON.parse(cartItems) : false;
 
+            
             let showItems = (cartItems) => {
                 document.getElementById("tableBody").innerHTML = "";
                 document.getElementById("tableFoot").innerHTML = "";
@@ -391,6 +391,7 @@
                 if (!cartItems.length) {
                     document.getElementById("mainCartBOX").innerHTML = "<span id='nothing'>You have no items in the cart!</span>"
                     document.getElementById("oder-now-button").className = "hideONBOX"
+                    
                     return;
                 }
                 var totalItems = 0;
@@ -454,9 +455,6 @@
             }
             
            
-
-
-
         </script>
         <script src="./main.js"></script>
 

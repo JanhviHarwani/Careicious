@@ -566,6 +566,7 @@ p.quote {
 .footer {
 	background:#292B2A url(../images/rausch.png) repeat;
 	padding:20px 0px;
+	margin-top:40px;
 }
 .footer p {
 	color:#f9efe3;
